@@ -1,4 +1,4 @@
-package search;
+package com.tianxiaobo.search;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ import java.util.*;
  * @author code4wt
  * @date 2017-12-23 17:26:28
  */
-public class RBTree<T extends Comparable<T>> {
+public class RedBlackTree<T extends Comparable<T>> {
 
     private final static boolean RED = true;
 
@@ -320,7 +320,7 @@ public class RBTree<T extends Comparable<T>> {
         return (p == null) ? null: p.right;
     }
 
-    private class TreeNode<T extends Comparable<T>> {
+    private class TreeNode<T> {
 
         TreeNode<T> parent;
 
